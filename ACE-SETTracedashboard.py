@@ -21,10 +21,10 @@ if 'assets_data' not in st.session_state:
         'No_Telefon': ['60123456789', '60139876543', '60112233445', '60198877665', '60176655443'],
         'Status': ['Keluar', 'Keluar', 'Masuk', 'Keluar', 'Masuk'],
         'Tarikh_Jangka_Pulang': [
-            datetime.now() - timedelta(hours=6),    # Dalam tempoh 12 jam (Peringatan Awal)
-            datetime.now() - timedelta(hours=30),   # Lewat > 24 jam (Amaran WhatsApp!)
+            datetime.now() - timedelta(hours=6), # Dalam tempoh 12 jam (Peringatan Awal)
+            datetime.now() - timedelta(hours=30), # Lewat > 24 jam (Amaran WhatsApp!)
             datetime.now() + timedelta(days=2), 
-            datetime.now() - timedelta(hours=48),   # Lewat > 24 jam (Amaran WhatsApp!)
+            datetime.now() - timedelta(hours=48), # Lewat > 24 jam (Amaran WhatsApp!)
             datetime.now() + timedelta(days=3)
         ]
     })
@@ -118,7 +118,5 @@ st.markdown("---")
 
 # --- 6. SENARAI REKOD PENUH KESELURUHAN ---
 st.subheader("📋 Pangkalan Data Keseluruhan Pergerakan Aset")
-st.dataframe(df, use_container_width=True)
----
-st.subheader(&quot;�� Pangkalan Data Keseluruhan Pergerakan Aset&quot;)
+st.dataframe(df, use_container_width=True)st.subheader(&quot;�� Pangkalan Data Keseluruhan Pergerakan Aset&quot;)
 st.dataframe(df, use_container_width=True)
